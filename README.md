@@ -1,6 +1,6 @@
 # Linux user chroot login shell
 
-After running this shell, the use will be chroot into a dir.
+After running this shell, the user will be chroot into a dir.
 
 
 ## Compile
