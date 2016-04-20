@@ -15,6 +15,11 @@ cd Linux-CHROOT-SHELL
 gcc main.c -o /usr/bin/chroot_shell
 ```
 
+## Add set uid and set gid permission so as to use chroot()
+```
+chmod u+s,g+s /usr/bin/chroot_shell
+```
+
 ## Basic chroot file system build
 ```
 mkdir -p /srv/chroot/jessie/
