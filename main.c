@@ -24,8 +24,8 @@ int main(void) {
     bool chdir_to_userdir = true;
     struct passwd *user_info;
     struct dirent *dir_item;
-    uid_t uid = getuid(), euid = geteuid(); // GET REAL UID
-    gid_t gid = getgid(), egid = getegid(); // GET REAL GID
+    uid_t uid = getuid(), euid = geteuid(); // GET UID
+    gid_t gid = getgid(), egid = getegid(); // GET GID
     char *shell_argv[] = {"--login", NULL}, chroot_dir[FILENAME_MAX + 1], uid_dir[FILENAME_MAX + 1], chroot_valid_filename[FILENAME_MAX + 1], valid_file_full_path[FILENAME_MAX + 1], user_dir_full_path[FILENAME_MAX + 1], user_dir_parent_dir[FILENAME_MAX + 1], tmp_file_name1[FILENAME_MAX + 1], tmp_file_name2[FILENAME_MAX + 1];
     printf("UID: %ld, GID: %ld\nEUID: %ld, EGID: %ld\n", (long) uid, (long) gid, (long) euid, (long) egid);
     sprintf(uid_dir, "/uid_%ld", (long) uid);

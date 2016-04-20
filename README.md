@@ -10,7 +10,9 @@ apt-get install gcc git
 ```
 git clone https://git.coding.net/yzs/Linux-CHROOT-SHELL.git
 ```
+```
 cd Linux-CHROOT-SHELL
+```
 ```
 gcc main.c -o /usr/bin/chroot_shell
 ```
